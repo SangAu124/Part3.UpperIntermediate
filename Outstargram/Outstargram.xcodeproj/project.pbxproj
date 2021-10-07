@@ -17,6 +17,7 @@
 		808EA171270BF7C4003F88ED /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA170270BF7C4003F88ED /* FeedTableViewCell.swift */; };
 		808EA173270C60F0003F88ED /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA172270C60F0003F88ED /* UIButton+.swift */; };
 		808EA176270DE5B3003F88ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA175270DE5B3003F88ED /* ProfileViewController.swift */; };
+		808EA179270F3772003F88ED /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA178270F3772003F88ED /* ProfileDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		808EA170270BF7C4003F88ED /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		808EA172270C60F0003F88ED /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		808EA175270DE5B3003F88ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		808EA178270F3772003F88ED /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				808EA175270DE5B3003F88ED /* ProfileViewController.swift */,
+				808EA178270F3772003F88ED /* ProfileDataView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				808EA157270B4477003F88ED /* AppDelegate.swift in Sources */,
 				808EA176270DE5B3003F88ED /* ProfileViewController.swift in Sources */,
 				808EA159270B4477003F88ED /* SceneDelegate.swift in Sources */,
+				808EA179270F3772003F88ED /* ProfileDataView.swift in Sources */,
 				808EA171270BF7C4003F88ED /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
