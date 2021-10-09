@@ -60,9 +60,9 @@ final class ProfileViewController: UIViewController {
         return button
     }()
     
-    private var photoDataView = ProfileDataView(title: "게시물", count: 123)
-    private var followerDataView = ProfileDataView(title: "팔로워", count: 999)
-    private var followingDataView = ProfileDataView(title: "팔로잉", count: 25)
+    private let photoDataView = ProfileDataView(title: "게시물", count: 50)
+    private let followerDataView = ProfileDataView(title: "팔로워", count: 999)
+    private let followingDataView = ProfileDataView(title: "팔로잉", count: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,6 +111,7 @@ private extension ProfileViewController{
             $0.leading.equalTo(profileImageView.snp.trailing).offset(inset)
             $0.trailing.equalToSuperview().inset(inset)
             $0.centerY.equalTo(profileImageView.snp.centerY)
+            
         }
         
         nameLabel.snp.makeConstraints{
