@@ -43,7 +43,6 @@ final class ProfileDataView: UIView {
     }
 }
 
-
 private extension ProfileDataView {
     func setupLayout() {
         let stackView = UIStackView(arrangedSubviews: [countLabel, titleLabel])
