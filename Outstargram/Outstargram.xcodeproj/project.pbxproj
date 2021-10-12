@@ -19,6 +19,7 @@
 		808EA176270DE5B3003F88ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA175270DE5B3003F88ED /* ProfileViewController.swift */; };
 		808EA179270F3772003F88ED /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA178270F3772003F88ED /* ProfileDataView.swift */; };
 		808EA17B27157B0F003F88ED /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA17A27157B0F003F88ED /* ProfileCollectionViewCell.swift */; };
+		808EA17D27159924003F88ED /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808EA17C27159924003F88ED /* UploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		808EA175270DE5B3003F88ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		808EA178270F3772003F88ED /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
 		808EA17A27157B0F003F88ED /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		808EA17C27159924003F88ED /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				808EA15A270B4477003F88ED /* FeedViewController.swift */,
 				808EA170270BF7C4003F88ED /* FeedTableViewCell.swift */,
+				808EA17C27159924003F88ED /* UploadViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				808EA17B27157B0F003F88ED /* ProfileCollectionViewCell.swift in Sources */,
+				808EA17D27159924003F88ED /* UploadViewController.swift in Sources */,
 				808EA15B270B4477003F88ED /* FeedViewController.swift in Sources */,
 				808EA173270C60F0003F88ED /* UIButton+.swift in Sources */,
 				808EA16E270BC708003F88ED /* TabBarController.swift in Sources */,
