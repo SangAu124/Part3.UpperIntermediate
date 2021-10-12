@@ -66,11 +66,14 @@ final class ProfileViewController: UIViewController {
     
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0.5
+        layout.minimumInteritemSpacing = 0.5
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(UICollectionView.self, forCellWithReuseIdentifier: "ProfileCollectionViewCell")
+        collectionView.register(ProfileCollectionViewCell.self, forCellWithReuseIdentifier: "ProfileCollectionViewCell")
         collectionView.dataSource = self
+        collectionView.delegate = self
        
         return collectionView
     }()
@@ -87,13 +90,22 @@ final class ProfileViewController: UIViewController {
 
 extension ProfileViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath)
-        cell.backgroundColor = .lightGray
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath) as? ProfileCollectionViewCell
         
-        return cell
+        cell?.setup(with: UIImage())
+        
+        return cell ?? UICollectionViewCell()
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
+    }
+}
+
+extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width: CGFloat = (collectionView.frame.width / 3) - 1.0
+        
+        return CGSize(width: width, height: width)
     }
 }
 
@@ -105,9 +117,22 @@ private extension ProfileViewController{
             image: UIImage(systemName: "ellipsis"),
             style: .plain,
             target: self,
-            action: nil
+            action: #selector(didTabRightBarButtonItem)
         )
         navigationItem.rightBarButtonItem = rightBarButton
+    }
+    
+    @objc func didTabRightBarButtonItem(){
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        [
+            UIAlertAction(title: "회원 정보 변경", style: .default),
+            UIAlertAction(title: "탈퇴하기", style: .destructive),
+            UIAlertAction(title: "닫기", style: .cancel)
+        ].forEach { actionSheet.addAction($0) }
+        
+        present(actionSheet, animated: true)
+
     }
     
     func setUpLayout() {
