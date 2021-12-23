@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		45F51014C0C959D564573D8F /* Pods_AppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADF0EBD8427CA45BAD278C1 /* Pods_AppStore.framework */; };
+		EFD11B4B2773F67D00ADFE05 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B4A2773F67D00ADFE05 /* TodayViewController.swift */; };
+		EFD11B4D2773FE4E00ADFE05 /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B4C2773FE4E00ADFE05 /* TodayCollectionViewCell.swift */; };
 		EFF895512773560B00D3E76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895502773560B00D3E76C /* AppDelegate.swift */; };
 		EFF895532773560B00D3E76C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895522773560B00D3E76C /* SceneDelegate.swift */; };
 		EFF895552773560B00D3E76C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895542773560B00D3E76C /* TabBarController.swift */; };
@@ -19,6 +21,8 @@
 		0ADF0EBD8427CA45BAD278C1 /* Pods_AppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6E4E703595029DFF5292F0 /* Pods-AppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.release.xcconfig"; path = "Target Support Files/Pods-AppStore/Pods-AppStore.release.xcconfig"; sourceTree = "<group>"; };
 		3CAC281FFCF5827D30D41CCC /* Pods-AppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.debug.xcconfig"; path = "Target Support Files/Pods-AppStore/Pods-AppStore.debug.xcconfig"; sourceTree = "<group>"; };
+		EFD11B4A2773F67D00ADFE05 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		EFD11B4C2773FE4E00ADFE05 /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFF8954D2773560B00D3E76C /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF895502773560B00D3E76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF895522773560B00D3E76C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EFD11B482773F64400ADFE05 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EFF895542773560B00D3E76C /* TabBarController.swift */,
+				EFD11B492773F65D00ADFE05 /* Today */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EFD11B492773F65D00ADFE05 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				EFD11B4A2773F67D00ADFE05 /* TodayViewController.swift */,
+				EFD11B4C2773FE4E00ADFE05 /* TodayCollectionViewCell.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
 		EFF895442773560B00D3E76C = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +102,7 @@
 			children = (
 				EFF895502773560B00D3E76C /* AppDelegate.swift */,
 				EFF895522773560B00D3E76C /* SceneDelegate.swift */,
-				EFF895542773560B00D3E76C /* TabBarController.swift */,
+				EFD11B482773F64400ADFE05 /* Scenes */,
 				EFF895592773560B00D3E76C /* Assets.xcassets */,
 				EFF8955B2773560B00D3E76C /* LaunchScreen.storyboard */,
 				EFF8955E2773560B00D3E76C /* Info.plist */,
@@ -202,9 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD11B4B2773F67D00ADFE05 /* TodayViewController.swift in Sources */,
 				EFF895552773560B00D3E76C /* TabBarController.swift in Sources */,
 				EFF895512773560B00D3E76C /* AppDelegate.swift in Sources */,
 				EFF895532773560B00D3E76C /* SceneDelegate.swift in Sources */,
+				EFD11B4D2773FE4E00ADFE05 /* TodayCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

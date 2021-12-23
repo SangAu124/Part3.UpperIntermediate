@@ -10,7 +10,7 @@ import Then
 
 class TabBarController: UITabBarController {
     
-    private lazy var todayViewController = UIViewController().then {
+    private lazy var todayViewController = TodayViewController().then {
         let tabBarItem = UITabBarItem(
             title: "투데이",
             image: UIImage(systemName: "mail"),
