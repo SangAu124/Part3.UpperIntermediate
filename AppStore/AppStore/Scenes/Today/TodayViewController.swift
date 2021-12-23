@@ -19,7 +19,7 @@ final class TodayViewController: UIViewController {
         CV.dataSource = self
         
         CV.backgroundColor = .systemBackground
-        CV.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
+        CV.register(TodayCollectionViewCellL.self, forCellWithReuseIdentifier: "todayCell")
         
         return CV
     }()
@@ -40,10 +40,10 @@ extension TodayViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "todayCell", for: indexPath)
-        cell.backgroundColor = .black
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "todayCell", for: indexPath) as? TodayCollectionViewCellL
+        cell?.setup()
         
-        return cell
+        return cell ?? UICollectionViewCell()
     }
     
     

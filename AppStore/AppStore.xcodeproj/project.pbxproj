@@ -10,6 +10,7 @@
 		45F51014C0C959D564573D8F /* Pods_AppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADF0EBD8427CA45BAD278C1 /* Pods_AppStore.framework */; };
 		EFD11B4B2773F67D00ADFE05 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B4A2773F67D00ADFE05 /* TodayViewController.swift */; };
 		EFD11B4D2773FE4E00ADFE05 /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B4C2773FE4E00ADFE05 /* TodayCollectionViewCell.swift */; };
+		EFD11B4F2774030600ADFE05 /* TodayCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B4E2774030600ADFE05 /* TodayCollectionHeaderView.swift */; };
 		EFF895512773560B00D3E76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895502773560B00D3E76C /* AppDelegate.swift */; };
 		EFF895532773560B00D3E76C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895522773560B00D3E76C /* SceneDelegate.swift */; };
 		EFF895552773560B00D3E76C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895542773560B00D3E76C /* TabBarController.swift */; };
@@ -23,6 +24,7 @@
 		3CAC281FFCF5827D30D41CCC /* Pods-AppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.debug.xcconfig"; path = "Target Support Files/Pods-AppStore/Pods-AppStore.debug.xcconfig"; sourceTree = "<group>"; };
 		EFD11B4A2773F67D00ADFE05 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		EFD11B4C2773FE4E00ADFE05 /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFD11B4E2774030600ADFE05 /* TodayCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionHeaderView.swift; sourceTree = "<group>"; };
 		EFF8954D2773560B00D3E76C /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF895502773560B00D3E76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF895522773560B00D3E76C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				EFD11B4A2773F67D00ADFE05 /* TodayViewController.swift */,
 				EFD11B4C2773FE4E00ADFE05 /* TodayCollectionViewCell.swift */,
+				EFD11B4E2774030600ADFE05 /* TodayCollectionHeaderView.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				EFD11B4B2773F67D00ADFE05 /* TodayViewController.swift in Sources */,
 				EFF895552773560B00D3E76C /* TabBarController.swift in Sources */,
 				EFF895512773560B00D3E76C /* AppDelegate.swift in Sources */,
+				EFD11B4F2774030600ADFE05 /* TodayCollectionHeaderView.swift in Sources */,
 				EFF895532773560B00D3E76C /* SceneDelegate.swift in Sources */,
 				EFD11B4D2773FE4E00ADFE05 /* TodayCollectionViewCell.swift in Sources */,
 			);
