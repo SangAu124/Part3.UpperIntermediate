@@ -15,6 +15,7 @@
 		EFD11B542774246100ADFE05 /* FeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B532774246100ADFE05 /* FeatureSectionView.swift */; };
 		EFD11B562774508200ADFE05 /* FeatureSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B552774508200ADFE05 /* FeatureSectionCollectionViewCell.swift */; };
 		EFD11B582774549100ADFE05 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B572774549100ADFE05 /* SeparatorView.swift */; };
+		EFD11B5C27745A9600ADFE05 /* RangkingFeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD11B5B27745A9600ADFE05 /* RangkingFeatureSectionView.swift */; };
 		EFF895512773560B00D3E76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895502773560B00D3E76C /* AppDelegate.swift */; };
 		EFF895532773560B00D3E76C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895522773560B00D3E76C /* SceneDelegate.swift */; };
 		EFF895552773560B00D3E76C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF895542773560B00D3E76C /* TabBarController.swift */; };
@@ -33,6 +34,7 @@
 		EFD11B532774246100ADFE05 /* FeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionView.swift; sourceTree = "<group>"; };
 		EFD11B552774508200ADFE05 /* FeatureSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFD11B572774549100ADFE05 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		EFD11B5B27745A9600ADFE05 /* RangkingFeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangkingFeatureSectionView.swift; sourceTree = "<group>"; };
 		EFF8954D2773560B00D3E76C /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF895502773560B00D3E76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF895522773560B00D3E76C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,11 +97,28 @@
 			isa = PBXGroup;
 			children = (
 				EFD11B5127741C0700ADFE05 /* AppViewController.swift */,
-				EFD11B532774246100ADFE05 /* FeatureSectionView.swift */,
-				EFD11B552774508200ADFE05 /* FeatureSectionCollectionViewCell.swift */,
+				EFD11B5927745A3100ADFE05 /* UpPart */,
 				EFD11B572774549100ADFE05 /* SeparatorView.swift */,
+				EFD11B5A27745A5D00ADFE05 /* MiddlePart */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		EFD11B5927745A3100ADFE05 /* UpPart */ = {
+			isa = PBXGroup;
+			children = (
+				EFD11B532774246100ADFE05 /* FeatureSectionView.swift */,
+				EFD11B552774508200ADFE05 /* FeatureSectionCollectionViewCell.swift */,
+			);
+			path = UpPart;
+			sourceTree = "<group>";
+		};
+		EFD11B5A27745A5D00ADFE05 /* MiddlePart */ = {
+			isa = PBXGroup;
+			children = (
+				EFD11B5B27745A9600ADFE05 /* RangkingFeatureSectionView.swift */,
+			);
+			path = MiddlePart;
 			sourceTree = "<group>";
 		};
 		EFF895442773560B00D3E76C = {
@@ -249,6 +268,7 @@
 			files = (
 				EFD11B4B2773F67D00ADFE05 /* TodayViewController.swift in Sources */,
 				EFF895552773560B00D3E76C /* TabBarController.swift in Sources */,
+				EFD11B5C27745A9600ADFE05 /* RangkingFeatureSectionView.swift in Sources */,
 				EFD11B582774549100ADFE05 /* SeparatorView.swift in Sources */,
 				EFF895512773560B00D3E76C /* AppDelegate.swift in Sources */,
 				EFD11B4F2774030600ADFE05 /* TodayCollectionHeaderView.swift in Sources */,
