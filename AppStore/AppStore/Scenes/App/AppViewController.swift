@@ -22,10 +22,8 @@ final class AppViewController: UIViewController {
         
         
         let featureSectionView = FeatureSectionView(frame: .zero)
-        let rangkinFeatureSectionView = UIView()
+        let rangkinFeatureSectionView = RangkingFeatureSectionView(frame: .zero)
         let exchangeCodeButtonView = UIView()
-        
-        rangkinFeatureSectionView.backgroundColor = .blue
         exchangeCodeButtonView.backgroundColor = .yellow
         
         [
