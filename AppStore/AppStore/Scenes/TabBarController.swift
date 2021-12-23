@@ -19,7 +19,7 @@ class TabBarController: UITabBarController {
         $0.tabBarItem = tabBarItem
     }
 
-    private lazy var appViewController = UIViewController().then {
+    private lazy var appViewController = UINavigationController(rootViewController: AppViewController()).then {
         let tabBarItem = UITabBarItem(
             title: "앱",
             image: UIImage(systemName: "square.stack.3d.up"),
