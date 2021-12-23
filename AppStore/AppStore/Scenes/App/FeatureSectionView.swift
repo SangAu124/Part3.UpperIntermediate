@@ -24,7 +24,7 @@ final class FeatureSectionView: UIView {
         cv.showsHorizontalScrollIndicator = false
         
         cv.register(
-            UICollectionViewCell.self,
+            FeatureSectionCollectionViewCell.self,
             forCellWithReuseIdentifier: "FeatureSectionCollectionViewCell"
         )
         
@@ -48,10 +48,10 @@ extension FeatureSectionView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureSectionCollectionViewCell", for: indexPath)
-        cell.backgroundColor = .blue
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureSectionCollectionViewCell", for: indexPath) as? FeatureSectionCollectionViewCell
+        cell?.setup()
         
-        return cell
+        return cell ?? UICollectionViewCell()
     }
     
     
