@@ -42,7 +42,7 @@ final class TodayCollectionViewCellL: UICollectionViewCell {
         layer.shadowRadius = 10
         
         subtitleLabel.text = "서브타이틀"
-        descriptionLabel.text = "설명설명타이틍"
+        descriptionLabel.text = "설명설명타이틀"
         titleLabel.text = "앱의 이름"
     }
 }

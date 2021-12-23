@@ -19,7 +19,15 @@ final class TodayViewController: UIViewController {
         CV.dataSource = self
         
         CV.backgroundColor = .systemBackground
-        CV.register(TodayCollectionViewCellL.self, forCellWithReuseIdentifier: "todayCell")
+        CV.register(
+            TodayCollectionViewCellL.self,
+            forCellWithReuseIdentifier: "todayCell"
+        )
+        CV.register(
+            TodayCollectionHeaderView.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: "todayHeader"
+        )
         
         return CV
     }()
@@ -46,6 +54,20 @@ extension TodayViewController: UICollectionViewDataSource {
         return cell ?? UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard
+            kind == UICollectionView.elementKindSectionHeader,
+            let header = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: "todayHeader",
+                for: indexPath
+            ) as? TodayCollectionHeaderView
+        else { return  UICollectionReusableView() }
+        
+        header.setupViews()
+        
+        return header
+    }
     
 }
 
@@ -53,5 +75,14 @@ extension TodayViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.frame.width - 32.0
         return CGSize(width: width, height: width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        CGSize(width: collectionView.frame.width - 32, height: 100.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let value: CGFloat = 16.0
+        return UIEdgeInsets(top: value, left: value, bottom: value, right: value)
     }
 }
