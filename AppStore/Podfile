@@ -8,6 +8,5 @@ target 'AppStore' do
   # Pods for AppStore
   pod 'Then'  
   pod 'SnapKit'
-
   pod 'Kingfisher', '~> 7.0'
 end
