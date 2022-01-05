@@ -28,6 +28,7 @@
 		EF4F4084276E4D4300D01E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4F4087276E4D4300D01E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF4F4089276E4D4300D01E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAD4DC327855D180080D38B /* TransformingOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TransformingOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		EFF4EFAF278550A0008AE85B /* FilteringOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilteringOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -89,6 +90,7 @@
 				EF4F4086276E4D4300D01E9C /* LaunchScreen.storyboard */,
 				EF4F4089276E4D4300D01E9C /* Info.plist */,
 				EFF4EFAF278550A0008AE85B /* FilteringOperator.playground */,
+				EFAD4DC327855D180080D38B /* TransformingOperator.playground */,
 			);
 			path = GitHubRepo;
 			sourceTree = "<group>";
