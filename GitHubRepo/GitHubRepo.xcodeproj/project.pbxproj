@@ -28,6 +28,7 @@
 		EF4F4084276E4D4300D01E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF4F4087276E4D4300D01E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF4F4089276E4D4300D01E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF4EFAF278550A0008AE85B /* FilteringOperator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilteringOperator.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +57,6 @@
 				8CD24A11E26286E8C1CE133C /* Pods-GitHubRepo.debug.xcconfig */,
 				908537F31242576CE1F402B9 /* Pods-GitHubRepo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +88,7 @@
 				EF4F4084276E4D4300D01E9C /* Assets.xcassets */,
 				EF4F4086276E4D4300D01E9C /* LaunchScreen.storyboard */,
 				EF4F4089276E4D4300D01E9C /* Info.plist */,
+				EFF4EFAF278550A0008AE85B /* FilteringOperator.playground */,
 			);
 			path = GitHubRepo;
 			sourceTree = "<group>";
