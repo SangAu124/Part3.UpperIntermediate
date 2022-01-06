@@ -105,7 +105,7 @@ let 달리기100M = BehaviorSubject<선수>(value: 김토끼)
         print(error)
         return false
     }
-    .dematerialize()
+//    .dematerialize()
     .subscribe(onNext: {
         print($0)
     })
