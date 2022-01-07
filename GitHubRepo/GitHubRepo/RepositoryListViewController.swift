@@ -24,7 +24,7 @@ class RepositoryListViewController: UITableViewController {
         
         self.refreshControl = UIRefreshControl()
         let refreshControl = self.refreshControl!
-        refreshControl.backgroundColor = .white
+        refreshControl.backgroundColor = .systemBackground
         refreshControl.tintColor = .darkGray
         refreshControl.attributedTitle = NSAttributedString(string: "당겨서 새로고침")
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
