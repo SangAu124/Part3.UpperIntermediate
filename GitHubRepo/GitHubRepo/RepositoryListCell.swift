@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class RepositoryListCell: UITableViewCell {
-    var repositry: Repository?
+    var repository: Repository?
     
     let nameLabel = UILabel()
     
@@ -28,7 +28,7 @@ class RepositoryListCell: UITableViewCell {
             contentView.addSubview($0)
         }
         
-        guard let repositry = repositry else { return }
+        guard let repositry = repository else { return }
 
         nameLabel.text = repositry.name
         nameLabel.font = .systemFont(ofSize: 15, weight: .bold)
