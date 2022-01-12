@@ -19,6 +19,7 @@
 		EFC0D379278EC4EB00EF5B75 /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */; };
 		EFC0D37B278EC51400EF5B75 /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0D37A278EC51400EF5B75 /* BlogListCellData.swift */; };
 		EFEC5416278ECE230049D27E /* AlertActionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5415278ECE230049D27E /* AlertActionConvertible.swift */; };
+		EFEC5418278EE0530049D27E /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC5417278EE0530049D27E /* DKBlog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
 		EFC0D37A278EC51400EF5B75 /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
 		EFEC5415278ECE230049D27E /* AlertActionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionConvertible.swift; sourceTree = "<group>"; };
+		EFEC5417278EE0530049D27E /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				EFC0D37A278EC51400EF5B75 /* BlogListCellData.swift */,
 				EFEC5415278ECE230049D27E /* AlertActionConvertible.swift */,
+				EFEC5417278EE0530049D27E /* DKBlog.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				EF3843B0278EAACC00994C52 /* MainViewController.swift in Sources */,
 				EFC0D379278EC4EB00EF5B75 /* BlogListCell.swift in Sources */,
+				EFEC5418278EE0530049D27E /* DKBlog.swift in Sources */,
 				EFC0D377278EC4D900EF5B75 /* BlogList.swift in Sources */,
 				EFC0D37B278EC51400EF5B75 /* BlogListCellData.swift in Sources */,
 				EF3843B3278EACDF00994C52 /* SearchBar.swift in Sources */,
