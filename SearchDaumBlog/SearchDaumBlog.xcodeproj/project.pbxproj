@@ -11,6 +11,8 @@
 		EF3843B0278EAACC00994C52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843AF278EAACC00994C52 /* MainViewController.swift */; };
 		EF3843B3278EACDF00994C52 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843B2278EACDF00994C52 /* SearchBar.swift */; };
 		EF3843B5278EB2B800994C52 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843B4278EB2B800994C52 /* FilterView.swift */; };
+		EF793387278EE68E00851140 /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF793386278EE68E00851140 /* SearchBlogAPI.swift */; };
+		EF79338A278EE7FB00851140 /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF793389278EE7FB00851140 /* SearchBlogNetwork.swift */; };
 		EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB21048278EA7B000F64667 /* AppDelegate.swift */; };
 		EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2104A278EA7B000F64667 /* SceneDelegate.swift */; };
 		EFB21052278EA7B100F64667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB21051278EA7B100F64667 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		EF3843AF278EAACC00994C52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF3843B2278EACDF00994C52 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EF3843B4278EB2B800994C52 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		EF793386278EE68E00851140 /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
+		EF793389278EE7FB00851140 /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
 		EFB21045278EA7B000F64667 /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB21048278EA7B000F64667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB2104A278EA7B000F64667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF793388278EE6A600851140 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF793386278EE68E00851140 /* SearchBlogAPI.swift */,
+				EF793389278EE7FB00851140 /* SearchBlogNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		EFB2103C278EA7B000F64667 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,7 @@
 				EFB21048278EA7B000F64667 /* AppDelegate.swift */,
 				EFB2104A278EA7B000F64667 /* SceneDelegate.swift */,
 				EFC0D37D278EC53600EF5B75 /* Entities */,
+				EF793388278EE6A600851140 /* Network */,
 				EFC0D37C278EC51B00EF5B75 /* Presentation */,
 			);
 			path = SearchDaumBlog;
@@ -288,6 +302,8 @@
 				EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */,
 				EF3843B5278EB2B800994C52 /* FilterView.swift in Sources */,
 				EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */,
+				EF793387278EE68E00851140 /* SearchBlogAPI.swift in Sources */,
+				EF79338A278EE7FB00851140 /* SearchBlogNetwork.swift in Sources */,
 				EFEC5416278ECE230049D27E /* AlertActionConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
