@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7074BB65717D03C5290563A4 /* Pods_SearchDaumBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6927678AE580E094EFF1D /* Pods_SearchDaumBlog.framework */; };
+		EF3843B0278EAACC00994C52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843AF278EAACC00994C52 /* MainViewController.swift */; };
+		EF3843B3278EACDF00994C52 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843B2278EACDF00994C52 /* SearchBar.swift */; };
 		EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB21048278EA7B000F64667 /* AppDelegate.swift */; };
 		EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2104A278EA7B000F64667 /* SceneDelegate.swift */; };
-		EFB2104D278EA7B000F64667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2104C278EA7B000F64667 /* ViewController.swift */; };
-		EFB21050278EA7B000F64667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB2104E278EA7B000F64667 /* Main.storyboard */; };
 		EFB21052278EA7B100F64667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB21051278EA7B100F64667 /* Assets.xcassets */; };
 		EFB21055278EA7B100F64667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,11 +20,11 @@
 		84D6927678AE580E094EFF1D /* Pods_SearchDaumBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchDaumBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D209DA3F1FDC82E11C9576 /* Pods-SearchDaumBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDaumBlog.release.xcconfig"; path = "Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog.release.xcconfig"; sourceTree = "<group>"; };
 		A39B67ACF118476878501480 /* Pods-SearchDaumBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDaumBlog.debug.xcconfig"; path = "Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3843AF278EAACC00994C52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EF3843B2278EACDF00994C52 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EFB21045278EA7B000F64667 /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB21048278EA7B000F64667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB2104A278EA7B000F64667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFB2104C278EA7B000F64667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EFB2104F278EA7B000F64667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFB21051278EA7B100F64667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFB21054278EA7B100F64667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFB21056278EA7B100F64667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 				A39B67ACF118476878501480 /* Pods-SearchDaumBlog.debug.xcconfig */,
 				89D209DA3F1FDC82E11C9576 /* Pods-SearchDaumBlog.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +57,16 @@
 				84D6927678AE580E094EFF1D /* Pods_SearchDaumBlog.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF3843B1278EABD700994C52 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EFB21051278EA7B100F64667 /* Assets.xcassets */,
+				EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */,
+				EFB21056278EA7B100F64667 /* Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		EFB2103C278EA7B000F64667 = {
@@ -81,13 +90,11 @@
 		EFB21047278EA7B000F64667 /* SearchDaumBlog */ = {
 			isa = PBXGroup;
 			children = (
+				EF3843B1278EABD700994C52 /* Resource */,
 				EFB21048278EA7B000F64667 /* AppDelegate.swift */,
 				EFB2104A278EA7B000F64667 /* SceneDelegate.swift */,
-				EFB2104C278EA7B000F64667 /* ViewController.swift */,
-				EFB2104E278EA7B000F64667 /* Main.storyboard */,
-				EFB21051278EA7B100F64667 /* Assets.xcassets */,
-				EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */,
-				EFB21056278EA7B100F64667 /* Info.plist */,
+				EF3843AF278EAACC00994C52 /* MainViewController.swift */,
+				EF3843B2278EACDF00994C52 /* SearchBar.swift */,
 			);
 			path = SearchDaumBlog;
 			sourceTree = "<group>";
@@ -154,7 +161,6 @@
 			files = (
 				EFB21055278EA7B100F64667 /* LaunchScreen.storyboard in Resources */,
 				EFB21052278EA7B100F64667 /* Assets.xcassets in Resources */,
-				EFB21050278EA7B000F64667 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFB2104D278EA7B000F64667 /* ViewController.swift in Sources */,
+				EF3843B0278EAACC00994C52 /* MainViewController.swift in Sources */,
+				EF3843B3278EACDF00994C52 /* SearchBar.swift in Sources */,
 				EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */,
 				EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EFB2104E278EA7B000F64667 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EFB2104F278EA7B000F64667 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,7 +363,6 @@
 				INFOPLIST_FILE = SearchDaumBlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +391,6 @@
 				INFOPLIST_FILE = SearchDaumBlog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
