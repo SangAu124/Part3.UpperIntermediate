@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7074BB65717D03C5290563A4 /* Pods_SearchDaumBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6927678AE580E094EFF1D /* Pods_SearchDaumBlog.framework */; };
 		EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB21048278EA7B000F64667 /* AppDelegate.swift */; };
 		EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2104A278EA7B000F64667 /* SceneDelegate.swift */; };
 		EFB2104D278EA7B000F64667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2104C278EA7B000F64667 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84D6927678AE580E094EFF1D /* Pods_SearchDaumBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchDaumBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D209DA3F1FDC82E11C9576 /* Pods-SearchDaumBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDaumBlog.release.xcconfig"; path = "Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog.release.xcconfig"; sourceTree = "<group>"; };
+		A39B67ACF118476878501480 /* Pods-SearchDaumBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDaumBlog.debug.xcconfig"; path = "Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog.debug.xcconfig"; sourceTree = "<group>"; };
 		EFB21045278EA7B000F64667 /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB21048278EA7B000F64667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB2104A278EA7B000F64667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7074BB65717D03C5290563A4 /* Pods_SearchDaumBlog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1BABB6C4C964192B44E577 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A39B67ACF118476878501480 /* Pods-SearchDaumBlog.debug.xcconfig */,
+				89D209DA3F1FDC82E11C9576 /* Pods-SearchDaumBlog.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91777B1C929E78D6DAF77F92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D6927678AE580E094EFF1D /* Pods_SearchDaumBlog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EFB2103C278EA7B000F64667 = {
 			isa = PBXGroup;
 			children = (
 				EFB21047278EA7B000F64667 /* SearchDaumBlog */,
 				EFB21046278EA7B000F64667 /* Products */,
+				1B1BABB6C4C964192B44E577 /* Pods */,
+				91777B1C929E78D6DAF77F92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFB21059278EA7B100F64667 /* Build configuration list for PBXNativeTarget "SearchDaumBlog" */;
 			buildPhases = (
+				5F546538671428E99B52FA24 /* [CP] Check Pods Manifest.lock */,
 				EFB21041278EA7B000F64667 /* Sources */,
 				EFB21042278EA7B000F64667 /* Frameworks */,
 				EFB21043278EA7B000F64667 /* Resources */,
+				3EE5A246E5AA148EFA288231 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EE5A246E5AA148EFA288231 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F546538671428E99B52FA24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchDaumBlog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFB21041278EA7B000F64667 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		EFB2105A278EA7B100F64667 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39B67ACF118476878501480 /* Pods-SearchDaumBlog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		EFB2105B278EA7B100F64667 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D209DA3F1FDC82E11C9576 /* Pods-SearchDaumBlog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
