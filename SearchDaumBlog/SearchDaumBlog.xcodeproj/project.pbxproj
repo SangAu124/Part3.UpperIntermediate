@@ -91,6 +91,8 @@
 				EFB21051278EA7B100F64667 /* Assets.xcassets */,
 				EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */,
 				EFB21056278EA7B100F64667 /* Info.plist */,
+				EFB21048278EA7B000F64667 /* AppDelegate.swift */,
+				EFB2104A278EA7B000F64667 /* SceneDelegate.swift */,
 				EFC0D37D278EC53600EF5B75 /* Entities */,
 				EFC0D37C278EC51B00EF5B75 /* Presentation */,
 			);
@@ -100,13 +102,8 @@
 		EFC0D37C278EC51B00EF5B75 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				EFB21048278EA7B000F64667 /* AppDelegate.swift */,
-				EFB2104A278EA7B000F64667 /* SceneDelegate.swift */,
 				EF3843AF278EAACC00994C52 /* MainViewController.swift */,
-				EF3843B2278EACDF00994C52 /* SearchBar.swift */,
-				EF3843B4278EB2B800994C52 /* FilterView.swift */,
-				EFC0D376278EC4D900EF5B75 /* BlogList.swift */,
-				EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */,
+				EFC0D37E278EC86F00EF5B75 /* SubComponents */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -117,6 +114,17 @@
 				EFC0D37A278EC51400EF5B75 /* BlogListCellData.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		EFC0D37E278EC86F00EF5B75 /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EF3843B2278EACDF00994C52 /* SearchBar.swift */,
+				EF3843B4278EB2B800994C52 /* FilterView.swift */,
+				EFC0D376278EC4D900EF5B75 /* BlogList.swift */,
+				EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */,
+			);
+			path = SubComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
