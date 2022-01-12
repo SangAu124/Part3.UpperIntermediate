@@ -102,8 +102,7 @@
 		EFC0D37C278EC51B00EF5B75 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				EF3843AF278EAACC00994C52 /* MainViewController.swift */,
-				EFC0D37E278EC86F00EF5B75 /* SubComponents */,
+				EFEC5411278EC9010049D27E /* MainViewController */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -119,9 +118,42 @@
 		EFC0D37E278EC86F00EF5B75 /* SubComponents */ = {
 			isa = PBXGroup;
 			children = (
+				EFEC5412278EC92A0049D27E /* SearchBar */,
+				EFEC5413278EC9330049D27E /* BlogListView */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		EFEC5411278EC9010049D27E /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF3843AF278EAACC00994C52 /* MainViewController.swift */,
+				EFC0D37E278EC86F00EF5B75 /* SubComponents */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		EFEC5412278EC92A0049D27E /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
 				EF3843B2278EACDF00994C52 /* SearchBar.swift */,
-				EF3843B4278EB2B800994C52 /* FilterView.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		EFEC5413278EC9330049D27E /* BlogListView */ = {
+			isa = PBXGroup;
+			children = (
+				EFEC5414278EC94B0049D27E /* SubComponents */,
 				EFC0D376278EC4D900EF5B75 /* BlogList.swift */,
+			);
+			path = BlogListView;
+			sourceTree = "<group>";
+		};
+		EFEC5414278EC94B0049D27E /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EF3843B4278EB2B800994C52 /* FilterView.swift */,
 				EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */,
 			);
 			path = SubComponents;
