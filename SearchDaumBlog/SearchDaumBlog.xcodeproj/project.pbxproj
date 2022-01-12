@@ -15,6 +15,9 @@
 		EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2104A278EA7B000F64667 /* SceneDelegate.swift */; };
 		EFB21052278EA7B100F64667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB21051278EA7B100F64667 /* Assets.xcassets */; };
 		EFB21055278EA7B100F64667 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */; };
+		EFC0D377278EC4D900EF5B75 /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0D376278EC4D900EF5B75 /* BlogList.swift */; };
+		EFC0D379278EC4EB00EF5B75 /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */; };
+		EFC0D37B278EC51400EF5B75 /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC0D37A278EC51400EF5B75 /* BlogListCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		EFB21051278EA7B100F64667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFB21054278EA7B100F64667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFB21056278EA7B100F64667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC0D376278EC4D900EF5B75 /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
+		EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
+		EFC0D37A278EC51400EF5B75 /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +91,32 @@
 				EFB21051278EA7B100F64667 /* Assets.xcassets */,
 				EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */,
 				EFB21056278EA7B100F64667 /* Info.plist */,
+				EFC0D37D278EC53600EF5B75 /* Entities */,
+				EFC0D37C278EC51B00EF5B75 /* Presentation */,
+			);
+			path = SearchDaumBlog;
+			sourceTree = "<group>";
+		};
+		EFC0D37C278EC51B00EF5B75 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
 				EFB21048278EA7B000F64667 /* AppDelegate.swift */,
 				EFB2104A278EA7B000F64667 /* SceneDelegate.swift */,
 				EF3843AF278EAACC00994C52 /* MainViewController.swift */,
 				EF3843B2278EACDF00994C52 /* SearchBar.swift */,
 				EF3843B4278EB2B800994C52 /* FilterView.swift */,
+				EFC0D376278EC4D900EF5B75 /* BlogList.swift */,
+				EFC0D378278EC4EB00EF5B75 /* BlogListCell.swift */,
 			);
-			path = SearchDaumBlog;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EFC0D37D278EC53600EF5B75 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0D37A278EC51400EF5B75 /* BlogListCellData.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +234,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF3843B0278EAACC00994C52 /* MainViewController.swift in Sources */,
+				EFC0D379278EC4EB00EF5B75 /* BlogListCell.swift in Sources */,
+				EFC0D377278EC4D900EF5B75 /* BlogList.swift in Sources */,
+				EFC0D37B278EC51400EF5B75 /* BlogListCellData.swift in Sources */,
 				EF3843B3278EACDF00994C52 /* SearchBar.swift in Sources */,
 				EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */,
 				EF3843B5278EB2B800994C52 /* FilterView.swift in Sources */,
