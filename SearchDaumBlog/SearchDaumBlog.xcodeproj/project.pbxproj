@@ -10,6 +10,7 @@
 		7074BB65717D03C5290563A4 /* Pods_SearchDaumBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D6927678AE580E094EFF1D /* Pods_SearchDaumBlog.framework */; };
 		EF3843B0278EAACC00994C52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843AF278EAACC00994C52 /* MainViewController.swift */; };
 		EF3843B3278EACDF00994C52 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843B2278EACDF00994C52 /* SearchBar.swift */; };
+		EF3843B5278EB2B800994C52 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3843B4278EB2B800994C52 /* FilterView.swift */; };
 		EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB21048278EA7B000F64667 /* AppDelegate.swift */; };
 		EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB2104A278EA7B000F64667 /* SceneDelegate.swift */; };
 		EFB21052278EA7B100F64667 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB21051278EA7B100F64667 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		A39B67ACF118476878501480 /* Pods-SearchDaumBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchDaumBlog.debug.xcconfig"; path = "Target Support Files/Pods-SearchDaumBlog/Pods-SearchDaumBlog.debug.xcconfig"; sourceTree = "<group>"; };
 		EF3843AF278EAACC00994C52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EF3843B2278EACDF00994C52 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		EF3843B4278EB2B800994C52 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		EFB21045278EA7B000F64667 /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB21048278EA7B000F64667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB2104A278EA7B000F64667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,16 +61,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF3843B1278EABD700994C52 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				EFB21051278EA7B100F64667 /* Assets.xcassets */,
-				EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */,
-				EFB21056278EA7B100F64667 /* Info.plist */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
 		EFB2103C278EA7B000F64667 = {
 			isa = PBXGroup;
 			children = (
@@ -90,11 +82,14 @@
 		EFB21047278EA7B000F64667 /* SearchDaumBlog */ = {
 			isa = PBXGroup;
 			children = (
-				EF3843B1278EABD700994C52 /* Resource */,
+				EFB21051278EA7B100F64667 /* Assets.xcassets */,
+				EFB21053278EA7B100F64667 /* LaunchScreen.storyboard */,
+				EFB21056278EA7B100F64667 /* Info.plist */,
 				EFB21048278EA7B000F64667 /* AppDelegate.swift */,
 				EFB2104A278EA7B000F64667 /* SceneDelegate.swift */,
 				EF3843AF278EAACC00994C52 /* MainViewController.swift */,
 				EF3843B2278EACDF00994C52 /* SearchBar.swift */,
+				EF3843B4278EB2B800994C52 /* FilterView.swift */,
 			);
 			path = SearchDaumBlog;
 			sourceTree = "<group>";
@@ -216,6 +211,7 @@
 				EF3843B0278EAACC00994C52 /* MainViewController.swift in Sources */,
 				EF3843B3278EACDF00994C52 /* SearchBar.swift in Sources */,
 				EFB21049278EA7B000F64667 /* AppDelegate.swift in Sources */,
+				EF3843B5278EB2B800994C52 /* FilterView.swift in Sources */,
 				EFB2104B278EA7B000F64667 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +361,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,7 +371,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,6 +390,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,7 +400,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
